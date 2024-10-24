@@ -26,17 +26,20 @@ o.updatetime = 50
 global.mapleader = " "
 
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = "markdown",
-    callback = function()
-        vim.opt.textwidth = 80
-    end,
+  pattern = "markdown",
+  callback = function()
+    vim.opt.textwidth = 80
+    vim.opt.shiftwidth = 4
+    vim.opt.tabstop = 4
+    vim.opt.softtabstop = 8
+  end,
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-    pattern = "python",
-    callback = function()
-        vim.opt.shiftwidth = 4
-        vim.opt.tabstop = 4
-        vim.opt.softtabstop = 8
-    end,
+  pattern = "python",
+  callback = function()
+    vim.opt.shiftwidth = 4
+    vim.opt.tabstop = 4
+    vim.opt.softtabstop = 8
+  end,
 })
