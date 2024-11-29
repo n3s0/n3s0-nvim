@@ -2,13 +2,16 @@ local global = vim.g
 local o = vim.opt
 
 o.guicursor = ""
+
 o.number = true
 o.relativenumber = true
+
 o.clipboard = "unnamedplus"
-o.tabstop = 2
-o.softtabstop = 2
-o.shiftwidth = 2
+o.tabstop = 4
+o.softtabstop = 4
+o.shiftwidth = 4
 o.expandtab = true
+o.smartindent = true
 o.encoding = "UTF-8"
 o.smartindent = true
 o.swapfile = false
@@ -19,6 +22,7 @@ o.hlsearch = false
 o.incsearch = true
 o.termguicolors = true
 o.scrolloff = 8
+o.colorcolumn = "80"
 o.signcolumn = "yes"
 o.isfname:append("@-@")
 o.updatetime = 50
@@ -31,7 +35,7 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt.textwidth = 80
     vim.opt.shiftwidth = 4
     vim.opt.tabstop = 4
-    vim.opt.softtabstop = 8
+    vim.opt.softtabstop = 4
   end,
 })
 
@@ -40,7 +44,7 @@ vim.api.nvim_create_autocmd("FileType", {
   callback = function()
     vim.opt.shiftwidth = 4
     vim.opt.tabstop = 4
-    vim.opt.softtabstop = 8
+    vim.opt.softtabstop = 4
   end,
 })
 
@@ -49,6 +53,6 @@ vim.api.nvim_create_autocmd("FileType", {
   callback = function()
     vim.opt.shiftwidth = 4
     vim.opt.tabstop = 4
-    vim.opt.softtabstop = 8
+    vim.opt.softtabstop = 4
   end,
 })
