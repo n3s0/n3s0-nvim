@@ -56,3 +56,21 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt.softtabstop = 4
   end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "html",
+  callback = function()
+    vim.opt.shiftwidth = 2
+    vim.opt.tabstop = 2
+    vim.opt.softtabstop = 2
+  end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "css",
+  callback = function()
+    vim.opt.shiftwidth = 2
+    vim.opt.tabstop = 2
+    vim.opt.softtabstop = 2
+  end,
+})

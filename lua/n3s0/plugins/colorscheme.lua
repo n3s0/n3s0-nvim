@@ -1,6 +1,6 @@
 -- ~/nvim/lua/n3s0/plugins/colorscheme.lua
 
--- cyberdream colorschme
+--[====[ cyberdream colorschme
 return {
   {
     "scottmckendry/cyberdream.nvim",
@@ -29,8 +29,9 @@ return {
     end,
   },
 }
+]====]---
 
---[====[ rose-pine colorschme
+--[ rose-pine colorschme
 return {
   "rose-pine/neovim",
   name = "rose-pine",
@@ -111,10 +112,9 @@ return {
       end,
     })
 
-    -- vim.cmd("colorscheme rose-pine")
+    vim.cmd("colorscheme rose-pine")
     -- vim.cmd("colorscheme rose-pine-moon")
     -- vim.cmd("colorscheme rose-pine-moon")
     -- vim.cmd("colorscheme rose-pine-dawn")
   end,
 }
-]====]---
