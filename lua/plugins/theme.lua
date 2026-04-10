@@ -1,5 +1,6 @@
 -- ~/nvim/lua/n3s0/plugins/theme.lua
 
+<<<<<<< HEAD
 <<<<<<< HEAD:lua/n3s0/plugins/colorscheme.lua
 --[====[ cyberdream colorschme
 return {
@@ -36,6 +37,9 @@ return {
 =======
 -- rose-pine colorschme
 >>>>>>> 46d8296 (Restructure):lua/plugins/theme.lua
+=======
+-- rose-pine colorschme
+>>>>>>> 46d8296 (Restructure)
 return {
   "rose-pine/neovim",
   name = "rose-pine",
