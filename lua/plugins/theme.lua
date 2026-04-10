@@ -1,5 +1,6 @@
--- ~/nvim/lua/n3s0/plugins/colorscheme.lua
+-- ~/nvim/lua/n3s0/plugins/theme.lua
 
+<<<<<<< HEAD:lua/n3s0/plugins/colorscheme.lua
 --[====[ cyberdream colorschme
 return {
   {
@@ -32,6 +33,9 @@ return {
 ]====]---
 
 --[ rose-pine colorschme
+=======
+-- rose-pine colorschme
+>>>>>>> 46d8296 (Restructure):lua/plugins/theme.lua
 return {
   "rose-pine/neovim",
   name = "rose-pine",
@@ -91,24 +95,24 @@ return {
         -- moon = {
         --     base = '#18191a',
         --     overlay = '#363738',
-        -- },
+        --},
       },
 
       highlight_groups = {
-        -- Comment = { fg = "foam" },
-        -- VertSplit = { fg = "muted", bg = "muted" },
+        iComment = { fg = "foam" },
+        VertSplit = { fg = "muted", bg = "muted" },
       },
 
       before_highlight = function(group, highlight, palette)
         -- Disable all undercurls
-        -- if highlight.undercurl then
-        --     highlight.undercurl = false
-        -- end
+         if highlight.undercurl then
+            highlight.undercurl = false
+        end
         --
         -- Change palette colour
-        -- if highlight.fg == palette.pine then
-        --     highlight.fg = palette.foam
-        -- end
+        if highlight.fg == palette.pine then
+             highlight.fg = palette.foam
+        end
       end,
     })
 

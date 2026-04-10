@@ -1,3 +1,4 @@
-require("n3s0.settings")
-require("n3s0.lazy")
-require("n3s0.remap")
+require "config.options"
+require "config.mappings"
+
+require "config.lazy"
